@@ -50,6 +50,8 @@ module.exports = class extends Client {
         this.modals = new Collection();
         this.logger = new Logger();
         this.config = require('../../config');
+        this.serversInveral = [];
+        this.rcons = new Collection();
 
         (async () => {
             await this.loadEvents('./src/events');
